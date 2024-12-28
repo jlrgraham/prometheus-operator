@@ -1,0 +1,15 @@
+route:
+  receiver: "null"
+  routes:
+  - receiver: mynamespace/myamc/test
+    matchers:
+    - namespace="mynamespace"
+    continue: true
+receivers:
+- name: "null"
+- name: mynamespace/myamc/test
+  pushoverConfigs:
+  - priority: "1"
+    token: 1234abc
+    userkey: 1234def
+templates: []
